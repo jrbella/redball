@@ -1,9 +1,11 @@
 <!DOCTYPE HTML>
 <html>
+    
     <head>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" type="text/css" />
         <script type="text/javascript" src="https://storage.googleapis.com/ics-redball/redball.js"></script>
         <script type="text/javascript">
+   
         function sayHello(){
             
             alert('Hi there!');
@@ -47,24 +49,153 @@
                 movetop();
                 //moving bottom
                
+               }
+                function movetopright(){
+                    movetop();
+                    moveright();
+                    movetop();
+                    moveright();
+                    movetop();
+                    moveright();
+                    movetop();
+                    moveright();
+                    movetop();
+                    moveright();
+                    
+                }
+                
+                function movetopleft(){
+                    movetop();
+                    moveleft();
+                     movetop();
+                    moveleft();
+                     movetop();
+                    moveleft();
+                     movetop();
+                    moveleft();
+                     movetop();
+                    moveleft();
+                    
+                }
+                
                
-                
-                
+            function movedownleft(){
+                movebottom();
+                moveleft();
+                movebottom();
+                moveleft();
+                 movebottom();
+                moveleft();
+                 movebottom();
+                moveleft();
+                 movebottom();
+                moveleft();
             }
+            
+              function movedownright(){
+                movebottom();
+                moveright();
+                 movebottom();
+                moveright();
+                 movebottom();
+                moveright();
+                 movebottom();
+                moveright();
+                 movebottom();
+                moveright();
+            }
+            
+             function movetriangle(){
+                 movetopright();
+                 movedownright();
+                moveleft();
+                moveleft();
+                moveleft();
+                moveleft();
+                moveleft();
+                moveleft();
+                moveleft();
+                moveleft();
+                moveleft();
+                moveleft();
+               
+              
+              
+             }
+             
               </script>
                      
                         
         </head>
       
-        <body>
+     
+
+<body background="Scifi1.jpg" background = size:cover>
+
+
+  <!--shape test -->
+        <div class="container-fluid">
+  <div class="row-fluid">
+     <div class="col-xs-3 col-xs-offset-3">
         <img id="redball" src="http://lrn.icstars.org/redball.jpg"></img>
-    <div class = "row-fluid">
-        <button onclick = "sayHello()">Hello world!</button>
-        <button onclick = "moveright()">Move Right</button>
-        <button onclick = "moveleft()">Move Left</button>
-        <button onclick = "movetop()">Move Up</button>
-        <button onclick = "movebottom()">Move Down</button>
-        <button onclick ="movesquare()">Square</button>
+        </div>
+        </div>
+        </div>
+
+    
+    <div class="container-fluid">
+  <div class="row-fluid">
+    <div class="col-xs-2">
+        <h4>Greetings!</h4>
+         <button onclick = "sayHello()">Hello world!</button>
+        
+         
+         </div>
+    </div>
+</div>
+
+
+      
+        
+        
+        
+ <!-- div Basic Moves --> 
+        <div class="container-fluid">
+        <div class="row-fluid">
+        <div class="col-xs-3">
+        <h4>Basic Movements</h4>
+         <button onclick = "moveleft()">Move Left</button>
+         <button onclick = "movebottom()">Move Down</button>
+         <button onclick = "movetop()">Move Up</button>
+         <button onclick = "moveright()">Move Right</button>
+        </div>
+    </div>
+</div>
+        <div class="container-fluid">
+        <div class="row-fluid">
+        <div class="col-xs-3">
+            <h4>Shapes</h4>
+            <button onclick = "movetriangle()">Triangle</button>
+            <button onclick ="movesquare()">Square</button>
+       </div>
+    </div>
+</div>
+       
+        <div class="container-fluid">
+        <div class="row-fluid">
+        <div class="col-xs-3">
+            <h4>Oblique Directions</h4>
+        <button onclick = "movedownleft()">Move Down and Left</button>
+        <button onclick = "movetopleft()">Move Up and Left</button>
+        <button onclick = "movetopright()">Move Up and Right</button>
+        <button onclick = "movedownright()">Move Down and Right</button>
+        
+    </div>
+</div>
+        
+        
+        
+        
         </div>
         </body>
         
