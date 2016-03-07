@@ -12,16 +12,16 @@
             
         }
             function moveright(){
-                redball.left = redball.left + 55;
+                redball.left = redball.left + 25;
             }
             function moveleft(){
-                redball.left = redball.left - 55;
+                redball.left = redball.left - 25;
             }
             function movetop(){
-                redball.top = redball.top - 55;
+                redball.top = redball.top - 25;
             }
             function movebottom(){
-                redball.top = redball.top + 55;
+                redball.top = redball.top + 25;
             }
             function movesquare(){
                 moveright();
@@ -118,6 +118,57 @@
                 moveleft();
                 moveleft();
                 moveleft();
+             }
+             
+              function moveoctagon(){
+                  movetopright();
+                  moveright();
+                  moveright();
+                  moveright();
+                  moveright();
+                  moveright();
+                  moveright();
+                  moveright();
+                  moveright();
+                  moveright();
+                  moveright();
+                  movedownright();
+                  movebottom();
+                  movebottom();
+                  movebottom();
+                  movebottom();
+                  movebottom();
+                  movebottom();
+                  movebottom();
+                  movebottom();
+                  movebottom();
+                  movebottom();
+                  movedownleft();
+                  moveleft();
+                  moveleft();
+                  moveleft();
+                  moveleft();
+                  moveleft();
+                  moveleft();
+                  moveleft();
+                  moveleft();
+                  moveleft();
+                  moveleft();
+                  movetopleft();
+                  movetop();
+                  movetop();
+                  movetop();
+                  movetop();
+                  movetop();
+                  movetop();
+                  movetop();
+                  movetop();
+                  movetop();
+                  movetop();
+                  
+              
+                  
+                  
                
               
               
@@ -130,7 +181,7 @@
       
      
 
-<body background="Scifi1.jpg" background = size:cover>
+<body background="Scifi1.jpg">
 
 
   <!--shape test -->
@@ -142,11 +193,11 @@
         </div>
         </div>
 
-    
+<!-- Greetings! -->    
     <div class="container-fluid">
   <div class="row-fluid">
     <div class="col-xs-2">
-        <h4>Greetings!</h4>
+        <h4><font color="white">Greetings!</font></h4>
          <button onclick = "sayHello()">Hello world!</button>
         
          
@@ -163,7 +214,7 @@
         <div class="container-fluid">
         <div class="row-fluid">
         <div class="col-xs-3">
-        <h4>Basic Movements</h4>
+        <h4><font color="white">Basic Movements</font></h4>
          <button onclick = "moveleft()">Move Left</button>
          <button onclick = "movebottom()">Move Down</button>
          <button onclick = "movetop()">Move Up</button>
@@ -171,20 +222,26 @@
         </div>
     </div>
 </div>
+
+
+<!-- Shapes -->
         <div class="container-fluid">
         <div class="row-fluid">
         <div class="col-xs-3">
-            <h4>Shapes</h4>
+            <h4><font color="white">Shapes</font></h4>
             <button onclick = "movetriangle()">Triangle</button>
             <button onclick ="movesquare()">Square</button>
+            <button onclick = "moveoctagon()">Octagon</button>
        </div>
     </div>
 </div>
-       
-        <div class="container-fluid">
+
+
+ <!-- Obliques! -->
+         <div class="container-fluid">
         <div class="row-fluid">
         <div class="col-xs-3">
-            <h4>Oblique Directions</h4>
+            <h4> <font color="white">Oblique Directions</font></h4>
         <button onclick = "movedownleft()">Move Down and Left</button>
         <button onclick = "movetopleft()">Move Up and Left</button>
         <button onclick = "movetopright()">Move Up and Right</button>
