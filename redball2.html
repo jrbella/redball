@@ -4,14 +4,21 @@
     <head>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" type="text/css" />
         <script type="text/javascript" src="https://storage.googleapis.com/ics-redball/redball.js"></script>
-        <script type="text/javascript">
+        
+        <script type =  "text/javascript">
    
         function sayHello(){
             
             alert('Hi there!');
             
-        } 
-        function movePlanetright(){
+          var  planet = redball;
+            
+        }
+            
+        
+ 
+          var img = document.getElementById("planet.jpg");
+        function planetmoveright(){
             planet.left = planet.left + 65;
             
         }
@@ -182,6 +189,8 @@
              }
              
               </script>
+              <!-- End script 1 -->
+              
                      
                         
         </head>
@@ -200,6 +209,12 @@
         </div>
         </div>
         
+        
+        <embed height="1" width="1" src="AnimaLibera.mp3">
+        
+        </div>
+        </div>
+        </div>
            <div class="container-fluid">
   <div class="row-fluid">
      <div class="col-xs-3 col-xs-offset-3">
@@ -214,7 +229,7 @@
     <div class="col-xs-2">
         <h4><font color="white">Greetings!</font></h4>
          <button onclick = "sayHello()">Hello world!</button>
-         <button onclick = "movePlanetright()">Planet Movement</button>
+         <button onclick = "planetmoveright()">Planet Movement</button>
          
          </div>
     </div>
@@ -268,7 +283,7 @@
         
         
         
-        </div>
+       
         </body>
         
     
