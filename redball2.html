@@ -1,6 +1,6 @@
 <!DOCTYPE HTML>
 <html>
-    
+   
     <head>
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" type="text/css" />
         <script type="text/javascript" src="https://storage.googleapis.com/ics-redball/redball.js"></script>
@@ -10,18 +10,25 @@
             
             alert('Hi there!');
             
+        } 
+        function movePlanetright(){
+            planet.left = planet.left + 65;
+            
         }
+        
+            
+        
             function moveright(){
-                redball.left = redball.left + 25;
+                redball.left = redball.left + 65;
             }
             function moveleft(){
-                redball.left = redball.left - 25;
+                redball.left = redball.left - 65;
             }
             function movetop(){
-                redball.top = redball.top - 25;
+                redball.top = redball.top - 65;
             }
             function movebottom(){
-                redball.top = redball.top + 25;
+                redball.top = redball.top + 65;
             }
             function movesquare(){
                 moveright();
@@ -192,6 +199,14 @@
         </div>
         </div>
         </div>
+        
+           <div class="container-fluid">
+  <div class="row-fluid">
+     <div class="col-xs-3 col-xs-offset-3">
+        <img id="planet" src="planet.jpg"></img>
+        </div>
+        </div>
+        </div>
 
 <!-- Greetings! -->    
     <div class="container-fluid">
@@ -199,7 +214,7 @@
     <div class="col-xs-2">
         <h4><font color="white">Greetings!</font></h4>
          <button onclick = "sayHello()">Hello world!</button>
-        
+         <button onclick = "movePlanetright()">Planet Movement</button>
          
          </div>
     </div>
