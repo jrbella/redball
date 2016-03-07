@@ -1,6 +1,7 @@
 <!DOCTYPE HTML>
 <html>
     <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" type="text/css" />
         <script type="text/javascript" src="https://storage.googleapis.com/ics-redball/redball.js"></script>
         <script type="text/javascript">
         function sayHello(){
@@ -20,19 +21,51 @@
             function movebottom(){
                 redball.top = redball.top + 55;
             }
+            function movesquare(){
+                moveright();
+                moveright();
+                moveright();
+                moveright();
+                moveright();
+                //moving to the right
+                movebottom();
+                movebottom();
+                movebottom();
+                movebottom();
+                movebottom();
+                //moving to the bottom
+                moveleft();
+                moveleft();
+                moveleft();
+                moveleft();
+                moveleft();
+                //moving left
+                movetop();
+                movetop();
+                movetop();
+                movetop();
+                movetop();
+                //moving bottom
+               
+               
+                
+                
+            }
               </script>
                      
                         
         </head>
-        I am adding things to commit
+      
         <body>
         <img id="redball" src="http://lrn.icstars.org/redball.jpg"></img>
-    
+    <div class = "row-fluid">
         <button onclick = "sayHello()">Hello world!</button>
         <button onclick = "moveright()">Move Right</button>
         <button onclick = "moveleft()">Move Left</button>
         <button onclick = "movetop()">Move Up</button>
         <button onclick = "movebottom()">Move Down</button>
+        <button onclick ="movesquare()">Square</button>
+        </div>
         </body>
         
     
