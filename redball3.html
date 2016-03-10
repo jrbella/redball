@@ -11,32 +11,49 @@
             
             alert('Hi there!');
             
-          var  planet = redball;
-            
-        }
-            
         
- 
-          var img = document.getElementById("planet.jpg");
-        function planetmoveright(){
-            planet.left = planet.left + 65;
-            
-        }
         
-            
+        }
         
             function moveright(){
+                if(redball.left >= 795){
+                    console.log("OMG LOOK OUT FOR THE WALL BRO!");
+                }
+            
+            else {
                 redball.left = redball.left + 65;
             }
-            function moveleft(){
+        }
+            //MOVE RIGHT
+            function moveleft(){ 
+                if(redball.left <= -340){
+                    console.log("OMG LOOK OUT FOR THE WALL BRO!");
+                }
+                
+                else{
                 redball.left = redball.left - 65;
             }
-            function movetop(){
-                redball.top = redball.top - 65;
-            }
-            function movebottom(){
-                redball.top = redball.top + 65;
-            }
+        }   
+        //MOVE LEFT
+           function movetop(){
+        if(redball.top <=0){
+       console.log('The ceiling is here');
+         }
+        else{ 
+        redball.top= redball.top -65;
+         }
+    }
+    
+    function movebottom(){
+        if(redball.top >= 620){
+            console.log('bAsEmEnT');
+        }
+    else{
+        redball.top= redball.top +65;
+        }
+    }
+            
+            //MOVE DOWN
             function movesquare(){
                 moveright();
                 moveright();
@@ -183,11 +200,11 @@
               
                   
                   
-               
+              }
+                 
               
-              
-             }
              
+        
               </script>
               <!-- End script 1 -->
               
@@ -204,24 +221,18 @@
         <div class="container-fluid">
   <div class="row-fluid">
      <div class="col-xs-3 col-xs-offset-3">
-        <img id="redball" src="http://lrn.icstars.org/redball.jpg"></img>
+        <img id="redball" src="planet.jpg"></img>
         </div>
         </div>
         </div>
         
         
-        <embed height="1" width="1" src="AnimaLibera.mp3">
+       
         
         </div>
         </div>
         </div>
-           <div class="container-fluid">
-  <div class="row-fluid">
-     <div class="col-xs-3 col-xs-offset-3">
-        <img id="planet" src="planet.jpg"></img>
-        </div>
-        </div>
-        </div>
+ 
 
 <!-- Greetings! --> 
 
